@@ -1,12 +1,10 @@
-import {print} from '../print'
-import {EButtonUsage} from "../../common/enum";
+import { handleStateChange } from './state';
+import { EButtonUsage } from '../../common/enum';
 
 const main = () => {
-    let result = 0
-
     return (state: EButtonUsage) => {
-        print(state)
-    }
-}
+        handleStateChange(state);
+    };
+};
 
-export {main}
+export { main };
