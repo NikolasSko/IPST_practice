@@ -1,6 +1,6 @@
 export const calculateExpression = (expression: string): string => {
     try {
-        const replaceX = expression.replace(/X/g, '*'); // Замена X на *
+        const replaceX = expression.replace(/X/g, '*');
         const result = eval(replaceX).toString();
         return result;
     } catch {
